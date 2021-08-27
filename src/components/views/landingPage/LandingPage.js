@@ -51,7 +51,7 @@ function LandingPage(props) {
                 <label>여자</label>
                 <input type ='radio' name = 'gender' value = 'female' onClick = {onClickHandler}/>
 
-                <button type="submit"> 검사시작 </button>
+                <button type="submit" disabled = {!name || !gender}> 검사시작 </button>
             </form>
         </div>
     )
